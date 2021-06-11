@@ -5,32 +5,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Estilos/navbar.css" rel="stylesheet" type="text/css" />
     <title>Registro Usuario</title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 29%;
-            margin-right: 0px;
-        }
-        .auto-style2 {
-            text-align: center;
-        }
-        .auto-style3 {
-            width: 160px;
-        }
-        .auto-style4 {
-            width: 357px;
-        }
-        .auto-style5 {
-            width: 160px;
-            height: 87px;
-        }
-        .auto-style6 {
-            width: 357px;
-            height: 87px;
-        }
-    </style>
+    
 </head>
 <body>
+    <header>
+        <img src="Imagenes/logo.png" alt="Alternate Text" class="logo" />
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">ROPA</a></li>
+                <li><a href="#">COMIDA</a></li>
+                <li><a href="#">OLLA COMÚN</a></li>
+                <li><a href="#">HOGAR ACOGIDA</a></li>
+                <li><a href="#">Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
     <form id="form1" runat="server">
         
         <table align-text="center" class="auto-style1" align="center">

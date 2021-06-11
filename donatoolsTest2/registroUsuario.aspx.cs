@@ -19,7 +19,6 @@ namespace donatoolsTest2
         {
             lblMensaje.Text = UsuarioController.addUsuario(txtRut.Text, txtCodigo.Text, txtNombre.Text,txtApellido.Text, txtEdad.Text, 
                 rblGenero.SelectedValue, txtMail.Text, txtTelefono.Text);
-
         }
 
         protected void lnkListado_Click(object sender, EventArgs e)

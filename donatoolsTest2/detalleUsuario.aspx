@@ -5,25 +5,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Estilos/navbar.css" rel="stylesheet" />
     <title>Detalle del Usuario</title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 31%;
-        }
-        .auto-style2 {
-            text-align: center;
-        }
-        .auto-style3 {
-            width: 193px;
-        }
-    </style>
 </head>
 <body>
+    <header>
+        <img src="Imagenes/logo.png" alt="Alternate Text" class="logo" />
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">ROPA</a></li>
+                <li><a href="#">COMIDA</a></li>
+                <li><a href="#">OLLA COMÚN</a></li>
+                <li><a href="#">HOGAR ACOGIDA</a></li>
+                <li><a href="#">Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
     <form id="form1" runat="server">
         <asp:TextBox ID="txtBuscar" placeholder="Código Usuario" runat="server"></asp:TextBox>
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
         <br />
         <asp:LinkButton ID="lnkNuevo" runat="server" OnClick="lnkNuevo_Click">Ir a Registro Usuarios</asp:LinkButton>
+        <br />
+        <asp:LinkButton ID="lnkVerUsuarios" runat="server" OnClick="lnkVerUsuarios_Click">Ver listado de Usuarios</asp:LinkButton>
         <br />
         <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
         <br />
@@ -72,9 +76,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td>
-                        <asp:Button ID="btnBuscar2" runat="server" Text="Buscar" OnClick="btnBuscar2_Click" />
+                    <td class="auto-style4">
+                        <asp:LinkButton ID="lnkEditar" runat="server" OnClick="lnkEditar_Click">Modificar</asp:LinkButton>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:Button ID="btnModificar" Visible="false" runat="server" Text="Modificar" OnClick="btnModificar_Click"/>
+                        <asp:Button ID="btnEliminar" Visible="false" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
+                        <br />
+                        <asp:Label ID="lbMensake2" runat="server" Text=""></asp:Label>
                     </td>
                 </tr>
             </table>

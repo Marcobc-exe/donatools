@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="detalleUsuario.aspx" />
+    <Content Include="Estilos\navbar.css" />
     <Content Include="listaUsuario.aspx" />
     <Content Include="registroUsuario.aspx" />
     <Content Include="Web.config" />
@@ -107,6 +108,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

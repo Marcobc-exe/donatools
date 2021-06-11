@@ -17,10 +17,7 @@ namespace donatoolsTest2
 
         }
 
-        protected void btnBuscar2_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         protected void lnkNuevo_Click(object sender, EventArgs e)
         {
@@ -37,6 +34,7 @@ namespace donatoolsTest2
                 lblMensaje.ForeColor = Color.Green;
                 Panel1.Visible = true;
 
+                //LLamado de los atributos del Usuario
                 txtRut.Text = usuario.Rut1;
                 txtNombre.Text = usuario.Nombre1 + " " + usuario.Apellido1;
                 txtEdad.Text = usuario.Edad1 + " años";
@@ -50,6 +48,33 @@ namespace donatoolsTest2
                 lblMensaje.ForeColor = Color.Red;
                 Panel1.Visible = false;
             }
+        }
+
+        protected void lnkEditar_Click(object sender, EventArgs e)
+        {
+            txtRut.Enabled = true;
+            txtNombre.Enabled = true;
+            txtEdad.Enabled = true;
+            rblGenero.Enabled = true;
+            txtMail.Enabled = true;
+            txtTelefono.Enabled = true;
+            btnModificar.Visible = true;
+            btnEliminar.Visible = true;
+        }
+
+        protected void btnModificar_Click(object sender, EventArgs e)
+        {
+            lbMensake2.Text = UsuarioController.editUsuario(txtBuscar.Text, txtRut.Text, txtNombre.Text, txtEdad.Text, rblGenero.SelectedValue, txtMail.Text, txtTelefono.Text);
+        }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            lbMensake2.Text = UsuarioController.deleteUsuario(txtBuscar.Text    );
+        }
+
+        protected void lnkVerUsuarios_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("listaUsuario.aspx");
         }
     }
 }
