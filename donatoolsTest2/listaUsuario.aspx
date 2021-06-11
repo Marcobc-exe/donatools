@@ -6,12 +6,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="Estilos/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="Estilos/listaUsuario.css" rel="stylesheet" />
     <title>Lista Usuarios</title>
-    <style type="text/css">
-        .auto-style1 {
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -22,13 +18,13 @@
                 <li><a href="#">COMIDA</a></li>
                 <li><a href="#">OLLA COMÚN</a></li>
                 <li><a href="#">HOGAR ACOGIDA</a></li>
-                <li><a href="#">Usuarios</a></li>
+                <li><a href="registroUsuario.aspx">REGISTRO USUARIOS</a></li>
+                <li><a href="detalleUsuario.aspx">DETALLE USUARIOS</a></li>
+                <li><a href="listaUsuario.aspx">LISTA USUARIOS</a></li>
             </ul>
         </nav>
     </header>
     <form id="form1" runat="server">
-        <asp:LinkButton ID="lnkNuevo" runat="server" OnClick="lnkNuevo_Click">Ir a Registro Usuarios</asp:LinkButton>
-        <br />
         <div class="auto-style1">
         <asp:GridView ID="grdUsuario" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />

@@ -1,0 +1,56 @@
+﻿#form1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    margin: 50px;
+}
+
+input[type = text]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 7px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 14px;
+    transition: 0.25s;
+    font-size: 20px;
+}
+
+input[type = radio]{
+    border: 0;
+    background: none;
+    width: 50px;
+    cursor: pointer;
+}
+
+input[type = text]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+input[type = submit] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 7px 40px;
+    outline: none;
+    color: white;
+    border-radius: 14px;
+    font-size: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+input[type = submit]:hover {
+    background: #2ecc71;
+}

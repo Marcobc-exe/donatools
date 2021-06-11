@@ -17,13 +17,6 @@ namespace donatoolsTest2
 
         }
 
-        
-
-        protected void lnkNuevo_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("registroUsuario.aspx");
-        }
-
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             Usuario usuario = UsuarioController.findUsuario(txtBuscar.Text);
@@ -64,17 +57,12 @@ namespace donatoolsTest2
 
         protected void btnModificar_Click(object sender, EventArgs e)
         {
-            lbMensake2.Text = UsuarioController.editUsuario(txtBuscar.Text, txtRut.Text, txtNombre.Text, txtEdad.Text, rblGenero.SelectedValue, txtMail.Text, txtTelefono.Text);
+            lbMensaje2.Text = UsuarioController.editUsuario(txtBuscar.Text,txtRut.Text, txtNombre.Text, txtEdad.Text, rblGenero.SelectedValue, txtMail.Text, txtTelefono.Text);
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-            lbMensake2.Text = UsuarioController.deleteUsuario(txtBuscar.Text    );
-        }
-
-        protected void lnkVerUsuarios_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("listaUsuario.aspx");
+            lbMensaje2.Text = UsuarioController.deleteUsuario(txtBuscar.Text);
         }
     }
 }

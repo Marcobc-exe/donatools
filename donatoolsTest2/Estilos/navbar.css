@@ -1,4 +1,4 @@
-﻿*{
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,39 +6,40 @@
     background: #24252A;
     color: #c7ecee;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 2%;
 }
 
-li, a{
+li, a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
 }
 
-.logo{
+.logo {
     cursor: pointer;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 220px;
 }
 
-.nav-links{
+.nav_links {
     list-style: none;
     margin-left: 50px;
 }
 
-.nav-links li{
-    display: inline;
+.nav_links li {
+    display: inline-block;
     padding: 0px 20px;
 }
 
-.nav-links li a{
+.nav_links li a {
     transition: all 0.3s ease 0s;
-}
+ }
 
-.nav-links li a:hover{
+.nav_links li a:hover {
     color: #0088a9;
 }
