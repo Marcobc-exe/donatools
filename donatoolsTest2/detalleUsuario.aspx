@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <img src="Imagenes/logo.png" alt="Alternate Text" class="logo" />
+        <a href="Index.aspx"><img src="Imagenes/logo.png" alt="Alternate Text" class="logo" /></a>
         <nav>
             <ul class="nav_links">
                 <li><a href="#">ROPA</a></li>
