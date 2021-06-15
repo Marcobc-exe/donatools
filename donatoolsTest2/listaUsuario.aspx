@@ -14,7 +14,7 @@
         <img src="Imagenes/logo.png" alt="Alternate Text" class="logo" />
         <nav>
             <ul class="nav_links">
-                <li><a href="#">ROPA</a></li>
+                <li><a href="#">TEST</a></li>
                 <li><a href="#">COMIDA</a></li>
                 <li><a href="#">OLLA COMÚN</a></li>
                 <li><a href="#">HOGAR ACOGIDA</a></li>
