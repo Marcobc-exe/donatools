@@ -1,9 +1,7 @@
-﻿body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+﻿#body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #f5f6fa;
+    background: #E0ECF2;
+    box-sizing: border-box;
 }
 
 header {
@@ -11,7 +9,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 2%;
-    background: #1d3557;
 }
 
 p {

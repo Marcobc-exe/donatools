@@ -5,11 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="Estilos/navbar.css" rel="stylesheet" />
-    <link href="Estilos/estiloForm.css" rel="stylesheet" />
+    <link href="Estilos/navbar.css" rel="stylesheet" type="text/css"/>
+    <link href="Estilos/estiloForm.css" rel="stylesheet" type="text/css"/>
     <title>Detalle del Usuario</title>
 </head>
-<body>
+<body id="body">
     <header>
         <a href="Index.aspx"><img src="Imagenes/logo.png" alt="Alternate Text" class="logo" /></a>
         <nav>

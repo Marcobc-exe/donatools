@@ -9,7 +9,7 @@
     <link href="Estilos/estiloForm.css" rel="stylesheet" type="text/css" />
     <title>Registro Usuario</title>
 </head>
-<body>
+<body id="body">
     <header>
         <a href="Index.aspx"><img src="Imagenes/logo.png" alt="Alternate Text" class="logo" /></a>
         <nav>
@@ -38,8 +38,8 @@
             </asp:RadioButtonList>
             <asp:TextBox ID="txtTelefono" PlaceHolder="Telefono" runat="server"></asp:TextBox>
             <asp:TextBox ID="txtMail" PlaceHolder="Correo" runat="server"></asp:TextBox>
-            <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" OnClick="btnRegistrar_Click" />
             <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
+            <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" OnClick="btnRegistrar_Click" />
         </form>
     </main>
     
