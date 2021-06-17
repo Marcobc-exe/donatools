@@ -71,6 +71,7 @@
     <Content Include="Estilos\listaUsuario.css" />
     <Content Include="Estilos\navbar.css" />
     <Content Include="Estilos\estiloForm.css" />
+    <Content Include="Index.aspx" />
     <Content Include="listaUsuario.aspx" />
     <Content Include="registroUsuario.aspx" />
     <Content Include="Web.config" />
@@ -86,6 +87,13 @@
     </Compile>
     <Compile Include="detalleUsuario.aspx.designer.cs">
       <DependentUpon>detalleUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="listaUsuario.aspx.cs">
       <DependentUpon>listaUsuario.aspx</DependentUpon>
@@ -113,6 +121,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Errores\" />
     <Folder Include="Imagenes\" />
   </ItemGroup>
   <PropertyGroup>

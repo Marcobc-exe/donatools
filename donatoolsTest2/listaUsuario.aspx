@@ -6,12 +6,12 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="Estilos/navbar.css" rel="stylesheet" type="text/css" />
-    <link href="Estilos/listaUsuario.css" rel="stylesheet" />
+    <link href="Estilos/listaUsuario.css" rel="stylesheet" type="text/css"/>
     <title>Lista Usuarios</title>
 </head>
-<body>
+<body id="body">
     <header>
-        <img src="Imagenes/logo.png" alt="Alternate Text" class="logo" />
+        <a href="Index.aspx"><img src="Imagenes/logo.png" alt="Alternate Text" class="logo" /></a>
         <nav>
             <ul class="nav_links">
                 <li><a href="#">ROPA</a></li>
