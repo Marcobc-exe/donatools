@@ -27,6 +27,8 @@
     </header>
     <form id="form1" runat="server">
         <h1>Detalle de Usuario</h1>
+        <br />
+        <asp:HiddenField ID="hdnCodigo" runat="server" />
         <asp:TextBox ID="txtBuscar" placeholder="Código Usuario" runat="server"></asp:TextBox>
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
         <br />
@@ -42,7 +44,7 @@
             </asp:RadioButtonList>
             <asp:TextBox ID="txtMail" Enabled="false" runat="server"></asp:TextBox>
             <asp:TextBox ID="txtTelefono" Enabled="false" runat="server"></asp:TextBox>
-            <asp:LinkButton ID="lnkEditar" runat="server" OnClick="lnkEditar_Click">Modificar Usuario</asp:LinkButton>
+            <asp:LinkButton ID="lnkEditar" runat="server" OnClick="lnkEditar_Click">Modificar</asp:LinkButton>
             <asp:Button ID="btnModificar" Visible="false" runat="server" Text="Guardar Cambios" OnClick="btnModificar_Click"/>
             <asp:Button ID="btnEliminar" Visible="false" runat="server" Text="Eliminar Usuario" OnClick="btnEliminar_Click" />
             <asp:Label ID="lbMensaje2" runat="server" Text=""></asp:Label>
