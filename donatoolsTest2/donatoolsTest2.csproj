@@ -79,6 +79,7 @@
     <Compile Include="Clases\Donacion.cs" />
     <Compile Include="Clases\Persona.cs" />
     <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Controller\DonacionController.cs" />
     <Compile Include="Controller\UsuarioController.cs" />
     <Compile Include="detalleUsuario.aspx.cs">
       <DependentUpon>detalleUsuario.aspx</DependentUpon>
