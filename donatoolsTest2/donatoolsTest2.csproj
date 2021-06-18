@@ -72,7 +72,6 @@
     <Content Include="donacionFormulario.aspx" />
     <Content Include="donacionRopa.aspx" />
     <Content Include="Estilos\listaUsuario.css" />
-    <Content Include="Estilos\navbar.css" />
     <Content Include="Estilos\estiloForm.css" />
     <Content Include="Estilos\style.css" />
     <Content Include="Index.aspx" />

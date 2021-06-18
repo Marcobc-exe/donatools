@@ -1,5 +1,7 @@
-﻿#body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;800&display=swap');
+
+#body {
+    font-family: 'Rubik', sans-serif;
     background: #E0ECF2;
 }
 

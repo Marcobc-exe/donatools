@@ -14,7 +14,11 @@ namespace donatoolsTest2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"] == null)
+            {
+                Session["error"] = "Debe iniciar sesión";
+                Response.Redirect("login.aspx");
+            }
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)

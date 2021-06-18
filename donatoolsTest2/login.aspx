@@ -5,25 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="Estilos/navbar.css" rel="stylesheet" type="text/css" />
     <link href="Estilos/estiloForm.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="Estilos/style.css" rel="stylesheet" />
+
     <title>Iniciar Sesión</title>
 
 </head>
 <body id="body">
      <header>
-        <a href="Index.aspx"><img src="Imagenes/logo.png" alt="Alternate Text" class="logo" /></a>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#">ROPA</a></li>
-                <li><a href="#">COMIDA</a></li>
-                <li><a href="#">OLLA COMÚN</a></li>
-                <li><a href="#">HOGAR ACOGIDA</a></li>
-                <li><a href="registroUsuario.aspx">REGISTRO USUARIOS</a></li>
-                <li><a href="detalleUsuario.aspx">DETALLE USUARIOS</a></li>
-                <li><a href="listaUsuario.aspx">LISTA USUARIOS</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+                <a href="Index.aspx" class="navbar-brand "><img src="Imagenes/logo.png" height="40" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="donacionRopa.aspx">ropa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donacionComida.aspx">comida</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">olla común</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">hogar de acogida</a></li>
+                    <li class="nav-item"><a class="nav-link" href="detalleUsuario.aspx">DETALLE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="listaUsuario.aspx">LISTA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registroUsuario.aspx">REGISTRO</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="login.aspx">INICIAR SESIÓN</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>  
     </header>
     <main>
         <form id="form1" runat="server" class="auto-style1">

@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-                <a href="#" class="navbar-brand "><img src="Imagenes/logo.png" height="40" alt=""></a>
+                <a href="Index.aspx" class="navbar-brand "><img src="Imagenes/logo.png" height="40" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,9 +25,10 @@
                     <li class="nav-item"><a class="nav-link" href="donacionComida.aspx">comida</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">olla común</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">hogar de acogida</a></li>
-                    <li class="nav-item"><a class="nav-link" href="registroUsuario.aspx">REGISTRO</a></li>
                     <li class="nav-item"><a class="nav-link" href="detalleUsuario.aspx">DETALLE</a></li>
                     <li class="nav-item"><a class="nav-link" href="listaUsuario.aspx">LISTA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registroUsuario.aspx">REGISTRO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.aspx">INICIAR SESIÓN</a></li>
                   </ul>
                 </div>
             </div>
