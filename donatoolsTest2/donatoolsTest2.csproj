@@ -68,11 +68,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="detalleUsuario.aspx" />
+    <Content Include="donacionComida.aspx" />
+    <Content Include="donacionFormulario.aspx" />
+    <Content Include="donacionRopa.aspx" />
     <Content Include="Estilos\listaUsuario.css" />
     <Content Include="Estilos\navbar.css" />
     <Content Include="Estilos\estiloForm.css" />
+    <Content Include="Estilos\style.css" />
     <Content Include="Index.aspx" />
     <Content Include="listaUsuario.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="registroUsuario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -80,6 +85,8 @@
     <Compile Include="Clases\Donacion.cs" />
     <Compile Include="Clases\Persona.cs" />
     <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Controller\DonacionController.cs" />
+    <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Controller\UsuarioController.cs" />
     <Compile Include="detalleUsuario.aspx.cs">
       <DependentUpon>detalleUsuario.aspx</DependentUpon>
@@ -87,6 +94,27 @@
     </Compile>
     <Compile Include="detalleUsuario.aspx.designer.cs">
       <DependentUpon>detalleUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donacionComida.aspx.cs">
+      <DependentUpon>donacionComida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="donacionComida.aspx.designer.cs">
+      <DependentUpon>donacionComida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donacionFormulario.aspx.cs">
+      <DependentUpon>donacionFormulario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="donacionFormulario.aspx.designer.cs">
+      <DependentUpon>donacionFormulario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donacionRopa.aspx.cs">
+      <DependentUpon>donacionRopa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="donacionRopa.aspx.designer.cs">
+      <DependentUpon>donacionRopa.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -101,6 +129,13 @@
     </Compile>
     <Compile Include="listaUsuario.aspx.designer.cs">
       <DependentUpon>listaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registroUsuario.aspx.cs">
