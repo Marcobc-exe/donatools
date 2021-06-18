@@ -71,9 +71,16 @@
     <Content Include="donacionComida.aspx" />
     <Content Include="donacionFormulario.aspx" />
     <Content Include="donacionRopa.aspx" />
+    <Content Include="Estilos\index.css" />
     <Content Include="Estilos\listaUsuario.css" />
     <Content Include="Estilos\estiloForm.css" />
     <Content Include="Estilos\style.css" />
+    <Content Include="Imagenes\img1.jpg" />
+    <Content Include="Imagenes\img2.jpg" />
+    <Content Include="Imagenes\img3.jpg" />
+    <Content Include="Imagenes\img4.jpg" />
+    <Content Include="Imagenes\img5.jpg" />
+    <Content Include="Imagenes\img6.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="listaUsuario.aspx" />
     <Content Include="login.aspx" />
@@ -156,7 +163,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Errores\" />
-    <Folder Include="Imagenes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

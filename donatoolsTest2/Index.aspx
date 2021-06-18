@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="Estilos/style.css" rel="stylesheet" />
-
+    <link href="Estilos/index.css" rel="stylesheet" />
     <title>Donatools</title>
 </head>
 <body>
@@ -34,14 +34,25 @@
             </div>
         </nav>
     </header>
-    <main class="container">
-        <h1>Donatools</h1>
-        <p>Aquí las personas pueden solicitar insumos básicos, tanto como ropa como alimento no perecible.</p>
-        <p>Las personas que deseén ayudar, que tienen ropa sin usar y guardada al fondo del closet, o alimento no perecible,</p>
-        <p>aquí podrán enviarla para poder ayudar a personas que estan con problemas económicos críticos.</p>
-        <br />
-        <p>Mucha gente a perdido sus trabajos debido a la pandemia, trabajos con los cuales mantenian arriba del vote a sus familias.</p>
-        <p>Y que han sido fuertemente golpeadas en este último tiempo.</p>
-    </main>
+        <div  class="bg-image img1">
+            <img src="Imagenes/img1.jpg" />
+        </div>
+        <div class="bg-image img2">
+            <img src="Imagenes/img2.jpg" />
+        </div>
+        <div class="bg-image img3">
+            <img src="Imagenes/img3.jpg" />
+        </div>
+        <div class="bg-image img4">
+            <img src="Imagenes/img4.jpg" />
+        </div>
+        <div class="bg-image img5">
+            <img src="Imagenes/img5.jpg" />
+        </div>
+        <div class="bg-image img6">
+            <img src="Imagenes/img6.jpg" />
+        </div>
+
+        <div class="bg-text">Donatools</div>
 </body>
 </html>
