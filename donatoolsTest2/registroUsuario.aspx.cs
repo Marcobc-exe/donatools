@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using donatoolsTest2.Controller;
+using donatoolsTest2.Clases;
 
 namespace donatoolsTest2
 {
@@ -18,7 +19,7 @@ namespace donatoolsTest2
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
             lblMensaje.Text = UsuarioController.addUsuario(txtRut.Text, txtCodigo.Text, txtNombre.Text,txtApellido.Text, txtEdad.Text, 
-                rblGenero.SelectedValue, txtMail.Text, txtTelefono.Text);
+                rblGenero.SelectedValue, txtMail.Text, txtTelefono.Text, txtUsername.Text, txtPassword.Text);
         }
     }
 }

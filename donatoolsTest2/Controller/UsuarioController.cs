@@ -12,7 +12,7 @@ namespace donatoolsTest2.Controller
 
         //Métodos de clase y reglas de negocio
         //Método de registro de Usuario.
-        public static string addUsuario(string rut, string codigo, string nombre, string apellido, string edad, string genero, string mail, string telefono)
+        public static string addUsuario(string rut, string codigo, string nombre, string apellido, string edad, string genero, string mail, string telefono, string username, string password)
         {
             try
             {
@@ -25,7 +25,10 @@ namespace donatoolsTest2.Controller
                     Edad1 = int.Parse(edad),
                     Genero1 = genero,
                     Mail1 = mail,
-                    Telefono1 = telefono
+                    Telefono1 = telefono,
+                    Password1 = password,
+                    Username1 = username
+
                 };
 
                 listaUsuario.Add(usuario);
@@ -106,11 +109,18 @@ namespace donatoolsTest2.Controller
         {
             if (UsuarioController.getAll().Count == 0)
             {
-                UsuarioController.addUsuario("1-1","101","Pepe","Juanin","23","m","pepe123@gmail.com","92125044");
-                UsuarioController.addUsuario("1-2", "102", "Lucho", "Carcamo", "32", "m", "lucho123@gmail.com", "92123055");
-                UsuarioController.addUsuario("1-3", "103", "María", "Castillo", "25", "f", "maria123@gmail.com", "92145644");
-                UsuarioController.addUsuario("1-4", "104", "Ana", "Lara", "23", "f", "ana123@gmail.com", "92167844");
+                UsuarioController.addUsuario("1-1", "101", "Pepe", "Juanin", "23", "m", "pepe123@gmail.com", "92125044", "user1", "1234");
+                UsuarioController.addUsuario("1-2", "102", "Lucho", "Carcamo", "32", "m", "lucho123@gmail.com", "92123055", "user2", "1234");
+                UsuarioController.addUsuario("1-3", "103", "María", "Castillo", "25", "f", "maria123@gmail.com", "92145644", "user3", "1234");
+                UsuarioController.addUsuario("1-4", "104", "Ana", "Lara", "23", "f", "ana123@gmail.com", "92167844", "user4", "1234");
             }
+
         }
+
+        public static List<Usuario> listaUsuarios()
+        {
+            return listaUsuario;
+        }
+
     }
 }

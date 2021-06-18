@@ -1,0 +1,146 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;800&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #D8E3E7;
+}
+
+.bg1 {
+    background-color: greenyellow;
+}
+/* Navbar */
+.navbar {
+    background-color: #132C33;
+    border-bottom: 5px solid #51C4D3;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.navbar .navbar-brand {
+    margin-top: -15px;
+    position: absolute;
+}
+
+.navbar .navbar-brand:hover {
+    background-color: #ffffff00;
+}
+
+.navbar a {
+    height: 60px;
+    padding: 18px 20px 5px !important;
+    color: #FBFBFB;
+}
+
+.navbar a:hover, .navbar a:visited {
+    color: #FBFBFB;
+    background-color: #1e4550;
+}
+
+.navbar .active {
+    background-color: #51C4D3;
+}
+/* Home */
+/* Boton donacion */
+.top-btn {
+    text-transform: uppercase;
+    background-color: #51C4D3;
+    border-radius: 5px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #FBFBFB;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 4px #18181846;
+}
+
+.top-btn:hover {
+    background-color: #4cb9c7;
+    color: #f5f5f5 !important;
+}
+/* Panel Donacion */
+.don-container {
+    background-color: #FBFBFB;
+    border-radius: 5px;
+    padding: 20px 30px;
+    box-shadow: 0px 5px 4px #18181846;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.don-container img {
+    border-radius: 5px;
+}
+
+.don-container .title {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+.don-container .title h2 {
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.don-container .date-con {
+    padding-top: 10px;
+}
+
+.don-container .date-con p {
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.don-container .date-con span {
+    font-size: 0.9em;
+    color: #505050;
+    font-weight: 500;
+}
+
+.don-container .descripcion {
+    background-color: #F4F4F4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.don-container .descripcion p {
+    margin-bottom: 0;
+}
+
+.don-container .solicitar-btn {
+    text-transform: uppercase;
+    background-color: #126E82;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #FBFBFB;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.don-container .solicitar-btn:hover {
+    cursor: pointer;
+    background-color: #0f6174;
+}
+
+.don-container .load-btn {
+    position: absolute;
+    background-color: #51C4D3;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #D8E3E7;
+}
+
+.don-container .load-btn:hover {
+    background-color: #4cb9c7;
+    cursor: pointer;
+}
