@@ -10,7 +10,7 @@ namespace donatoolsTest2.Controller
     {
         private static List<Donacion> listaDonacion = new List<Donacion>();
 
-        public static string addDonacion(int id, string nombre, string descripcion, string tipo, string fecha_publicacion, string fecha_limite, bool publico) 
+        public static string addDonacion(string id, string nombre, string descripcion, string tipo, string fecha_publicacion, string fecha_limite, bool publico) 
         {
             try
             {
@@ -43,7 +43,7 @@ namespace donatoolsTest2.Controller
             {
                 foreach (Donacion donacion in listaDonacion)
                 {
-                    if (donacion.Tipo_donacion == tipo)
+                    if (donacion.Tipo_donacion == tipo && donacion.Publico == true)
                     {
                         filterList.Add(donacion);
                     }
@@ -79,10 +79,41 @@ namespace donatoolsTest2.Controller
                     donacion.Fecha_limite = fechaLimite;
                     return "Donacion " + donacion.Id_Donacion + " actualizada exitosamente";
                 }
+                return "Donacion no encontrada";
             }
             catch (Exception e)
             {
                 return "Error: " + e.Message;
+            }
+        }
+
+        public static string deleteDonacion(string id)
+        {
+            Donacion donacion = findDonacion(id);
+            if (donacion != null)
+            {
+                listaDonacion.Remove(donacion);
+                return "Donacion eliminada correctamente";
+            }
+            else
+            {
+                return "Donacion no encontrada";
+            }
+        }
+
+        public static List<Donacion> getAll()
+        {
+            return listaDonacion;
+        }
+
+        public static void fillDonacion()
+        {
+            if (DonacionController.getAll().Count == 0)
+            {
+                DonacionController.addDonacion("1", "Zapatos", "Zapatos de cuero talla 36 medios gastados", "ropa", "10/07/2021", "17/07/21", true);
+                DonacionController.addDonacion("2", "Fideos", "8 Paqueta de fideos con salsa", "comida", "13/07/2021", "14/07/21", false);
+                DonacionController.addDonacion("3", "Zapallo", "2 kilos de zapallo italiano", "comida", "04/07/2021", "17/07/21", true);
+                DonacionController.addDonacion("4", "Poleron", "Poleron talla m hombre", "ropa", "06/07/2021", "17/07/21", true);
             }
         }
     }

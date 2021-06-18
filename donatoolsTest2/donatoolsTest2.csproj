@@ -68,12 +68,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="detalleUsuario.aspx" />
+    <Content Include="donacionFormulario.aspx" />
     <Content Include="Estilos\listaUsuario.css" />
     <Content Include="Estilos\navbar.css" />
     <Content Include="Estilos\estiloForm.css" />
+    <Content Include="Estilos\style.css" />
     <Content Include="listaUsuario.aspx" />
     <Content Include="registroUsuario.aspx" />
     <Content Include="Web.config" />
+    <Content Include="donacionRopa.aspx" />
+    <Content Include="donacionComida.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Donacion.cs" />
@@ -87,6 +91,13 @@
     </Compile>
     <Compile Include="detalleUsuario.aspx.designer.cs">
       <DependentUpon>detalleUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donacionFormulario.aspx.cs">
+      <DependentUpon>donacionFormulario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="donacionFormulario.aspx.designer.cs">
+      <DependentUpon>donacionFormulario.aspx</DependentUpon>
     </Compile>
     <Compile Include="listaUsuario.aspx.cs">
       <DependentUpon>listaUsuario.aspx</DependentUpon>
@@ -102,6 +113,20 @@
     </Compile>
     <Compile Include="registroUsuario.aspx.designer.cs">
       <DependentUpon>registroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donacionRopa.aspx.cs">
+      <DependentUpon>donacionRopa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="donacionRopa.aspx.designer.cs">
+      <DependentUpon>donacionRopa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="donacionComida.aspx.cs">
+      <DependentUpon>donacionComida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="donacionComida.aspx.designer.cs">
+      <DependentUpon>donacionComida.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
