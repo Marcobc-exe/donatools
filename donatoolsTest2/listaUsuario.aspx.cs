@@ -13,6 +13,14 @@ namespace donatoolsTest2
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGrid();
+
+            //Validación de sesión
+            if (Session["user"] ==null)
+            {
+                Session["error"] = "Debe iniciar sesión";
+                Response.Redirect("login.aspx");
+            }
+
         }
 
         public void cargarGrid()
@@ -20,6 +28,7 @@ namespace donatoolsTest2
             grdUsuario.DataSource = from m in UsuarioController.getAll()
                                     select new
                                     {
+                                        Código = m.CodigoUsuario1,
                                         Rut = m.Rut1,
                                         Nombre = m.Nombre1 + " " + m.Apellido1,
                                         Edad = m.Edad1 + " años",

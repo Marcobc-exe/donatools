@@ -21,6 +21,7 @@
                 <li><a href="registroUsuario.aspx">REGISTRO USUARIOS</a></li>
                 <li><a href="detalleUsuario.aspx">DETALLE USUARIOS</a></li>
                 <li><a href="listaUsuario.aspx">LISTA USUARIOS</a></li>
+                <li><a href="login.aspx">INICIAR SESIÓN</a></li>
             </ul>
         </nav>
 

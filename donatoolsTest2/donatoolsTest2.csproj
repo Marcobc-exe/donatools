@@ -73,13 +73,16 @@
     <Content Include="Estilos\estiloForm.css" />
     <Content Include="Index.aspx" />
     <Content Include="listaUsuario.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="registroUsuario.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Donacion.cs" />
     <Compile Include="Clases\Persona.cs" />
+    <Compile Include="Clases\Rol.cs" />
     <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Controller\LoginController.cs" />
     <Compile Include="Controller\UsuarioController.cs" />
     <Compile Include="detalleUsuario.aspx.cs">
       <DependentUpon>detalleUsuario.aspx</DependentUpon>
@@ -101,6 +104,13 @@
     </Compile>
     <Compile Include="listaUsuario.aspx.designer.cs">
       <DependentUpon>listaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registroUsuario.aspx.cs">

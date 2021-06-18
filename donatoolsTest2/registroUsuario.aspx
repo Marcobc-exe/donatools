@@ -21,12 +21,17 @@
                 <li><a href="registroUsuario.aspx">REGISTRO USUARIOS</a></li>
                 <li><a href="detalleUsuario.aspx">DETALLE USUARIOS</a></li>
                 <li><a href="listaUsuario.aspx">LISTA USUARIOS</a></li>
+                <li><a href="login.aspx">INICIAR SESIÓN</a></li>
+
             </ul>
         </nav>
     </header>
     <main>
+        <%//SE AGREGÓ EL TXT USERNAME Y PASSWORD %>
         <form id="form1" runat="server" class="auto-style1">
             <h1>Registro Usuarios</h1>
+            <asp:TextBox ID="txtUsername" PlaceHolder="Nombre de usuario" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtPassword" Class="Pass" PlaceHolder="Contraseña" TextMode="Password" runat="server"></asp:TextBox>
             <asp:TextBox ID="txtCodigo" PlaceHolder="Código" runat="server"></asp:TextBox>
             <asp:TextBox ID="txtRut" PlaceHolder="Rut" runat="server"></asp:TextBox>
             <asp:TextBox ID="txtNombre"  PlaceHolder="Nombre" runat="server"></asp:TextBox>
